@@ -3,4 +3,6 @@
     <!--<color name="colorPrimaryX">#3F51B5</color>-->
     <!--<color name="colorPrimaryDarkX">#303F9F</color>-->
     <!--<color name="colorAccentX">#FF4081</color>-->
+    <color name="colorPrimaryDark">#0B5B4F</color>
+    <color name="colorPrimary">#108070</color>
 </resources>
