@@ -35,14 +35,15 @@ public class ImageSelectDialog {
         mContext = context;
         mAreImage = areImage;
         mRequestCode = requestCode;
-        mRootView = initView();
+       // mRootView = initView();
+        openImagePicker();
         AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
         builder.setTitle("Insert Image");
         builder.setView(mRootView);
         mDialog = builder.create();
     }
 
-    private View initView() {
+  /*  private View initView() {
         LayoutInflater layoutInflater = LayoutInflater.from(mContext);
         View view = layoutInflater.inflate(R.layout.are_image_select, null);
         final RelativeLayout insertInternetImageLayout = view.findViewById(R.id.are_image_select_from_internet_layout);
@@ -67,7 +68,7 @@ public class ImageSelectDialog {
             }
         });
         return view;
-    }
+    }*/
 
     public void show() {
         mDialog.show();
@@ -81,7 +82,7 @@ public class ImageSelectDialog {
 		mDialog.dismiss();
     }
 
-    private void insertInternetImage() {
+    /*private void insertInternetImage() {
         EditText editText = mRootView.findViewById(R.id.are_image_select_internet_image_url);
         String imageUrl = editText.getText().toString();
         if (imageUrl.startsWith("http")
@@ -91,6 +92,6 @@ public class ImageSelectDialog {
         } else {
             Util.toast(mContext, "Not a valid image");
         }
-    }
+    }*/
 
 }
